@@ -23,3 +23,5 @@ console.log(fullName);
 var noor;
 noor = 1000;
 console.log(noor);
+
+console.log(typeof(3.44))

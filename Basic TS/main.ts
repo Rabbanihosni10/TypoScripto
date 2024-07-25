@@ -20,8 +20,10 @@ console.log(devs);
 console.log(fullName);
 
 // any datatype
-let noor:string | number;
+let noor:string | number;  //  |=> union sign
 noor=1000;
 console.log(noor);
 export {};
- 
+
+// basic data Types of typescript
+//string, boolean, number, any ,union(|)

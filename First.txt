@@ -22,3 +22,20 @@ let modifyer='Rabbani';
 3.String
 4.Boolean
 5.any 
+6.union(|)
+
+we have to set up an environment for the typescript before starting our work
+create two folder named public and src
+the public will take the js and the src will take the typescript files
+also html files will be outside of this folder
+
+to setup this- 
+1.tsc --init
+2."rootDir": "./src/",      // it is used to save the typescript file 
+3."outDir": "./public/js/",  // here the js file will be saved
+4.tsc -w                      // js file will follow each line from typescript
+5."noEmitOnError": true,  // used in tsc config json so that if any error is found then that line will not be written on js file
+
+function
+array
+object oriented
