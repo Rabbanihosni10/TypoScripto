@@ -4,3 +4,21 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Rabbanihosni10/TypoScripto.git
 git push -u origin main
+
+
+
+Two types in the TypeScript-
+
+Explicit(the type will be mentioned)
+let modifyer:string='Rabbani';
+
+Implicit(Osposthovabe indicate kora)
+let modifyer='Rabbani';
+
+
+5 types of data-
+1.Number
+2.Decimal
+3.String
+4.Boolean
+5.any 
