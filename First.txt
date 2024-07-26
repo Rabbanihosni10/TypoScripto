@@ -12,17 +12,18 @@ Two types in the TypeScript-
 Explicit(the type will be mentioned)
 let modifyer:string='Rabbani';
 
-Implicit(Osposthovabe indicate kora)
+Implicit(Osposthovabe/indirectly indicate kora)
 let modifyer='Rabbani';
 
 
-5 types of data-
-1.Number
-2.Decimal
-3.String
+7 types of data-
+1.any 
+2.String
+3.Number
 4.Boolean
-5.any 
-6.union(|)
+5.union(|)
+6.void   (only can console anything no return can be done)
+7.never  (only can throw error)
 
 we have to set up an environment for the typescript before starting our work
 create two folder named public and src
@@ -36,6 +37,44 @@ to setup this-
 4.tsc -w                      // js file will follow each line from typescript
 5."noEmitOnError": true,  // used in tsc config json so that if any error is found then that line will not be written on js file
 
-function
+
+
+
+function-
+
+const ageCal=(name: string,age: number) : string=>{
+    return `Hi ${name}, you are ${age} years old`;
+};
+ageCal("Ashraful Haque",30);
+//by typing this i gave order to the function that it will always return string
+
+
+const ageCal=(name: string="Asraf",age: number=30) : string=>
+//also we can give default perametter value and the perametter type and the expected output or result type in here
+
+
+const ageCal=(name: string="Asraf",age: number=30): string=>{
+    // return `Hi ${name}, you are ${age} years old`;
+    return age; will show error that the expected return value is string not number
+    
+};
+ageCal("Ashraful Haque",30);
+
+
+const ageCal=(name: string="Asraf",age: number=30): void=>{
+    console.log(`Hi ${name}`);    
+};
+const info = (name: string): void =>{
+    console.log("");
+};
+//if nothing return from function then 'void' will be used in a function perametter type
+
+const info=(name:string):never=>{
+    throw new Error("");
+}
+//if 'never' type is used then it can only throgh an error but cant return anything or console anything
+
+
+
 array
 object oriented
