@@ -1,7 +1,10 @@
 "use strict";
-const info = (val) => {
-    if (typeof val === "string") {
-        return val.toUpperCase();
+class Student {
+    constructor(name, age, skill) {
+        this.name = name;
+        this.age = age;
+        this.skill = skill;
     }
-    return val + 10;
-};
+}
+const student = new Student("Ashraf", 30, true);
+console.log(student);
