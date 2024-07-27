@@ -3,7 +3,7 @@ class Student {
     constructor() {
         this.name = "";
         this.age = 12;
-        this.skill = true;
+        this.skill = false;
     }
     ageCal() {
     }
